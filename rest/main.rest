@@ -1,0 +1,39 @@
+### GET
+GET http://localhost:1337/healthcheck
+
+### POST 👍
+POST http://localhost:1337/healthcheck
+Content-Type: application/json
+
+{
+  "name": "Nicolas"
+}
+
+### POST 👍
+POST http://localhost:1337/healthcheck
+Content-Type: application/json
+
+{
+  "name": "Nicolas",
+  "email": "nicohnavarro@gmail.com"
+}
+
+### POST 👎
+POST http://localhost:1337/healthcheck 
+Content-Type: application/json
+
+{
+  "name": "Nicolas",
+  "email": "nico"
+}
+
+### POST 👎
+POST http://localhost:1337/healthcheck 
+Content-Type: application/json
+
+{
+  "name": "Nicolas",
+  "email": "nicohnavarro@gmail.com",
+  "description": "invalid field"
+}
+
