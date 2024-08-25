@@ -1,0 +1,43 @@
+### GET ALL
+GET http://localhost:1337/books/get/all
+
+### GET BY ID
+GET http://localhost:1337/books/get/66cb03f322866db329e63549
+
+### POST 👍
+POST http://localhost:1337/books/create
+Content-Type: application/json
+
+{
+  "title": "Clean Code",
+  "author": "Uncle Bob"
+}
+
+### POST 👎
+POST http://localhost:1337/books/create
+Content-Type: application/json
+
+{
+  "name": "Nicolas",
+  "author": "Nicolas Navarro"
+}
+
+### QUERY 👍
+POST http://localhost:1337/books/query
+Content-Type: application/json
+
+{
+  "title": "Clean Code"
+}
+
+### PATCH 👍
+PATCH http://localhost:1337/books/update/66cb03f322866db329e63549
+Content-Type: application/json
+
+{
+  "title": "Clean Code 2"
+}
+
+### DELETE 👍
+DELETE http://localhost:1337/books/delete/66cb03f322866db329e63549
+Content-Type: application/json
